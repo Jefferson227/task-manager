@@ -1,0 +1,244 @@
+/* Add your css styles here. Plagiarism is NOT tolerated!*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button:focus,
+button:active {
+    outline: 0;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: #383838;
+}
+
+main {
+    margin-top: 60px;
+}
+
+.notification {
+    position: absolute;
+    bottom: 0;
+    left: 40px;
+    background: #515151;
+    color: #eee;
+    padding: 20px 40px;
+    border-radius: 5px;
+    opacity: 0;
+    z-index: 10;
+}
+
+.notification-animation {
+    animation-name: notify;
+    animation-duration: 2.5s;
+}
+
+@keyframes notify {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 40px;
+        opacity: 1;
+    }
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: #33cccc
+}
+
+.navbar-container {
+    text-align: center;
+    margin-top: 15px;
+    color: #fff;
+}
+
+.navbar-arrow-back {
+    width: 10%;
+    float: left;
+    font-size: 40px;
+    line-height: 20px;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.navbar-title {
+    width: 90%;
+}
+
+.section-view,
+.section-add-edit {
+    padding-top: 50px;
+}
+
+.section-add-edit {
+    display: none;
+}
+
+.centered-title {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.centered-container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px 30px;
+}
+
+.no-task-message {
+    text-align: center;
+    display: none;
+}
+
+.task {
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.task-item {
+    list-style: none;
+}
+
+.task-item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.animation-expand:hover {
+    transform: scale(1.03);
+}
+
+.task-priority-high {
+    background-color: #ff0000;
+    color: #fff;
+}
+
+.task-priority-moderate {
+    background-color: #0066ff;
+    color: #fff;
+}
+
+.task-priority-low {
+    background-color: #33cc33;
+    color: #fff;
+}
+
+.task > div:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.button-add {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 80px;
+    height: 80px;
+    font-size: 50px;
+    border: none;
+    background: #33cccc;
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-text {
+    display: block;
+    width: 60%;
+    height: 30px;
+    padding-left: 5px;
+    border-radius: 3px;
+    border: 1px solid #b4b4b4;
+}
+
+.input-textarea {
+    width: 100%;
+    height: 40%;
+}
+
+.select-date {
+    display: inline-block;
+    width: 10%;
+}
+
+.select-month {
+    width: 20%;
+}
+
+.input-error {
+    display: none;
+    margin-top: 5px;
+    font-size: 13px;
+    color: red;
+}
+
+.button-group {
+    text-align: center;
+}
+
+.confirmation-delete {
+    display: none;
+    background: #facece;
+    padding: 10px 0;
+}
+
+.confirmation-delete-message {
+    font-weight: 800;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.button-create {
+    background: #33cc33;
+}
+
+.button-create:hover {
+    background: #70db70;
+}
+
+.button-save {
+    background: #0080ff;
+}
+
+.button-save:hover {
+    background: #3399ff;
+}
+
+.button-delete {
+    background: #ff0000;
+}
+
+.button-delete:hover {
+    background: #ff3333;
+}
